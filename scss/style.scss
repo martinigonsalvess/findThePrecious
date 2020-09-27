@@ -4,22 +4,36 @@
 }
 $primairy-color:#ff6600;
 $secondairy-color:#fff;
+$third-color: #464343;
 $ring-size: 50px;
-//@mixin drop-shadow(offset-x offset-y blur-radius color);
 
 
+@for $i from 1 through 6 {
+    #ring#{$i} {
+        height: 22px * $i;
+        width: 22px * $i;
+        //border-width: 1px * $i;
+        margin: 0 -6px * $i;
+        border:2px * $i ;
+        border-radius: 50%;
+        border-style: solid;
+        border-color:$third-color;
+    }
+}
 *{
     box-sizing:border-box;
     margin:0;
     padding:0;
     font-family: myAniron;
     list-style: none;
+    
 
     
 }
 body{
-    background-color: rgb(224, 224, 224);
+    background-image: url("/img/bgImg.png");
     
+     
 }
 
 a{
@@ -38,10 +52,12 @@ a{
         padding:10px 30px;        
         
         ul{
-            display: flex;
+            display: flex;           
+
             
            li{
                padding: 5px;
+               
            }
            a{
             color: $secondairy-color;
@@ -59,7 +75,6 @@ main{
 }
 .container-rings{
     height: 100%;
-    background-image: url("/img/bgImg.png");
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +92,7 @@ main{
         width: $ring-size;
         height: $ring-size;
         border-radius: $ring-size/2;
-        border: 5px red solid;
+        border: 5px $primairy-color solid;
         margin:0 20px;        
     }
     
@@ -91,23 +106,42 @@ main{
         width: $ring-size * 5;
         height: $ring-size *5;
         border-radius: ($ring-size *5)/2;
-        border: 25px gold solid;
+        border: 25px goldenrod solid;
         margin: 0 20px;
-        @include drop-shadow(30px 10px 4px #4444dd);
+      //  @include drop-shadow(30px 10px 4px #4444dd);
       //  drop-shadow:30px 10px 4px #4444dd;
-    }
+    }     
+}
+.the-rings{
+    flex-direction: row;
     
-
+    img > id{     
+      // width: 20px; 
+       display: flex;
+       align-items: center;
+       justify-content: center;
+            
+    }
+    p{
+        margin-top: 50px;
+    }
     
 }
 
+
+
 footer{
-    height: 50%;
+    
+    width: 100%;
+    position: fixed;
 
     .wrap-box{
         display:flex;
         align-items: center;
         justify-content: space-around;
+        background-color: $primairy-color;
+        margin:60px;       
+        
 
         .box1,.box2,.box3{
             display:flex;

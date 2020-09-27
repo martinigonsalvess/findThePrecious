@@ -3,6 +3,66 @@
   src: url(/aniron-font/Aniron-7BaP.ttf);
 }
 
+#ring1 {
+  height: 22px;
+  width: 22px;
+  margin: 0 -6px;
+  border: 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #464343;
+}
+
+#ring2 {
+  height: 44px;
+  width: 44px;
+  margin: 0 -12px;
+  border: 4px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #464343;
+}
+
+#ring3 {
+  height: 66px;
+  width: 66px;
+  margin: 0 -18px;
+  border: 6px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #464343;
+}
+
+#ring4 {
+  height: 88px;
+  width: 88px;
+  margin: 0 -24px;
+  border: 8px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #464343;
+}
+
+#ring5 {
+  height: 110px;
+  width: 110px;
+  margin: 0 -30px;
+  border: 10px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #464343;
+}
+
+#ring6 {
+  height: 132px;
+  width: 132px;
+  margin: 0 -36px;
+  border: 12px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #464343;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,7 +73,7 @@
 }
 
 body {
-  background-color: #e0e0e0;
+  background-image: url("/img/bgImg.png");
 }
 
 a {
@@ -63,7 +123,6 @@ main {
 
 .container-rings {
   height: 100%;
-  background-image: url("/img/bgImg.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +157,7 @@ main {
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  border: 5px red solid;
+  border: 5px #ff6600 solid;
   margin: 0 20px;
 }
 
@@ -118,13 +177,36 @@ main {
   width: 250px;
   height: 250px;
   border-radius: 125px;
-  border: 25px gold solid;
+  border: 25px goldenrod solid;
   margin: 0 20px;
-  drop-shadow: 30px 10px 4px #4444dd;
+}
+
+.the-rings {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.the-rings img > id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.the-rings p {
+  margin-top: 50px;
 }
 
 footer {
-  height: 50%;
+  width: 100%;
+  position: fixed;
 }
 
 footer .wrap-box {
@@ -136,6 +218,8 @@ footer .wrap-box {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #ff6600;
+  margin: 60px;
 }
 
 footer .wrap-box .box1, footer .wrap-box .box2, footer .wrap-box .box3 {
