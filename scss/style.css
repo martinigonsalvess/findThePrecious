@@ -1,0 +1,147 @@
+@font-face {
+  font-family: myAniron;
+  src: url(/aniron-font/Aniron-7BaP.ttf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: myAniron;
+  list-style: none;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container nav ul li {
+  padding: 5px;
+}
+
+.container nav ul a {
+  color: #fff;
+}
+
+.container nav ul a:hover {
+  color: black;
+}
+
+main {
+  height: 75vh;
+}
+
+.container-rings {
+  height: 100%;
+  background-image: url("/img/bgImg.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.my-precious {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-precious .orange-ring {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 5px red solid;
+  margin: 0 20px;
+}
+
+.the-one-ring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.the-one-ring .golden-ring {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  border: 25px gold solid;
+  margin: 0 20px;
+  drop-shadow: 30px 10px 4px #4444dd;
+}
+
+footer {
+  height: 50%;
+}
+
+footer .wrap-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .wrap-box .box1, footer .wrap-box .box2, footer .wrap-box .box3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
